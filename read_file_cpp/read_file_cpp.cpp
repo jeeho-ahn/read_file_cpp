@@ -15,7 +15,7 @@ int main()
 	std::string line;
 	std::vector<std::string> string_list;
 
-	if (file.is_open())
+	if (file.is_open())	//file was found and openned with no problem
 	{
 		std::cout << "\tFile Opened - " << filename << std::endl;
 		while (std::getline(file, line))
@@ -33,7 +33,7 @@ int main()
 
 		return 0;
 	}
-	else
+	else	//error occurred while opening the file
 	{
 		std::cout << "Error while reading the file. Check the file path again." << std::endl;
 		return -1;
